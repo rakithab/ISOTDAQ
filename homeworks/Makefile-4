@@ -1,0 +1,18 @@
+CC=g++
+CFLAGS=-c -Wall
+LDFLAGS=
+SOURCES=Exercise4.c
+OBJECTS=$(SOURCES:.c=.o)
+EXECUTABLE=exercise4
+
+all: $(SOURCES) $(EXECUTABLE)
+
+$(EXECUTABLE): $(OBJECTS) 
+	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
+
+.cpp.o:
+	$(CC) $(CFLAGS) $< -o $@
+
+clean:
+	rm -rf *o $(EXECUTABLE)
+
