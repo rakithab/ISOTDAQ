@@ -1,0 +1,500 @@
+   42  ssh cdaql6
+   43  ssh cdaql5
+   44  ssh cdaql6
+   45  cd scratch/scripts/
+   46  emacs PlotTools.C&
+   47  root -l
+   48  exit
+   49  ssh ou-qweak5 
+   50  ssh cdaql1
+   51  tunnels 
+   52  kill 24348
+   53  ssh cdaql1
+   54  ssh ou-qweak5 
+   55  ssh cdaql4
+   56  ssh ou-qweak5 
+   57  tunnels 
+   58  kill 25789
+   59  ssh ou-qweak5 
+   60  exit
+   61  scp cdaql5:~/cdaq/moller/colscan_30jan2011.ods .
+   62  scp cdaql5:/net/cdaqfs/home/cdaq/moller/colscan_30jan2011.ods .
+   63  scp cdaql5:/net/cdaqfs/home/cdaq/moller/colscan/colscan_30jan2011.ods .
+   64  ssh cdaql4
+   65  ssh cdaql6
+   66  ssh cdaql4
+   67  exit
+   68  ssh ou-qweak5 
+   69  exit
+   70  tunnels 
+   71  kill 7621
+   72  tunnels 
+   73  kill 27189
+   74  tunnels 
+   75  exit
+   76  cd Qweak_Analysis
+   77  scp -r ou-qweak5:~/Qweak_Data_Analysis/Event_Cut_Effects_Analysis/Sigma_Cut_ana .
+   78  cd Sigma_Cut_ana/
+   79  ls
+   80  tunnels 
+   81  kill 9499
+   82  gedit sigma2_summary_9481.text &
+   83  gedit sigma3_summary_9481.text &
+   84  exit
+   85  ssh ou-qweak5 
+   86  cd Qweak_Analysis/
+   87  nedit data_set_bcm1_IHWP_OUT_9594_9612 &
+   88  gedit data_set_bcm1_IHWP_OUT_9594_9612 &
+   89  cd
+   90  source QwAnalysis_new/SetupFiles/SET_ME_UP.csh
+   91  source QwAnalysis_new/SetupFiles/SET_ME_UP.bash
+   92  cd scratch/scripts/
+   93  emacs PlotTools.C&
+   94  ls ~/Qweak_Analysis/
+   95  root -l
+   96  ssh ou-qweak5 
+   97  ssh cdaql6
+   98  ssh ou-qweak5 
+   99  exit
+  100  tunnels 
+  101  kill 31225
+  102  ssh cdaql4
+  103  ssh cdaql5
+  104  tunne
+  105  tunnels 
+  106  kill 4717
+  107  ssh cdaql5
+  108  tunnels 
+  109  ssh cdaql4
+  110  cd QwAnalysis
+  111  svn info
+  112  svn update
+  113  svn status
+  114  exit
+  115  mv HC_LOG_Summary_01-16-2011 QwLogs/
+  116  ssh cdaql4
+  117  tunnels 
+  118  kill 22994
+  119  tunnels 
+  120  ssh cdaql4
+  121  root -l
+  122  df -h
+  123  ps aux | grep firefox
+  124  kill -9 1896
+  125  ps aux | grep firefox
+  126  kill -9 25242
+  127  ps aux | grep firefox
+  128  kill -9 25322
+  129  ps aux | grep firefox
+  130  kill -9 25246
+  131  ps aux | grep firefox
+  132  kill -9 25250
+  133  exit
+  134  cd scratch/scripts/
+  135  emacs PlotTools.C&
+  136  root -l
+  137  tunnels 
+  138  kill 9129
+  139  ssh ou-qweak5 
+  140  ssh cdaql6
+  141  cd Qweak_Analysis/
+  142  ls
+  143  scp cdaql6:/net/cdaqfs/home/cdaq/users/rakithab/IHWP_IN-OUT_02-01-2011.png .
+  144  scp cdaql6:/net/cdaqfs/home/cdaq/users/rakithab/IHWP_OUT-IN_02-01-2011.png .
+  145  eog IHWP_IN-OUT_02-01-2011.png 
+  146  ssh ou-qweak5 
+  147  ssh cdaql6
+  148  man rand
+  149  emacs QwAnalysis/Parity/src/QwEventRing.cc 
+  150  emacs QwAnalysis/Parity/include/QwEventRing.h 
+  151  scp -r  /home/rakitha/mycodes  ou-qweak5:.
+  152  man a2ps
+  153  scp -r  /home/rakitha/mycodes  ou-qweak5:.
+  154  tunnels 
+  155  kill 19428
+  156  scp -r  /home/rakitha/mycodes  ou-qweak5:.
+  157  man a2ps
+  158  ls
+  159  cd mycodes/
+  160  ls
+  161  cd ISOTDAQ_Homeworks/
+  162  ls
+  163  emacs Exercise7.c&
+  164  cp Makefile-5 Makefile-7
+  165  emacs Makefile-5 Makefile-7 &
+  166  emacs Exercise5.c&
+  167  make -f Makefile-7
+  168  ./exercise7 
+  169  make -f Makefile-7
+  170  ./exercise7 
+  171  make -f Makefile-7
+  172  ./exercise7 
+  173  make -f Makefile-7
+  174  ./exercise7 
+  175  make -f Makefile-7
+  176  ./exercise7 
+  177  make -f Makefile-7
+  178  ./exercise7 
+  179  make -f Makefile-7
+  180  ./exercise7 
+  181  make -f Makefile-7
+  182  ./exercise7 
+  183  make -f Makefile-7
+  184  ./exercise7 
+  185  make -f Makefile-7
+  186  ./exercise7 
+  187  make -f Makefile-7
+  188  ./exercise7 
+  189  make -f Makefile-7
+  190  ./exercise7 
+  191  make -f Makefile-7
+  192  ./exercise7 
+  193  make -f Makefile-7
+  194  ./exercise7 
+  195  make -f Makefile-7
+  196  ./exercise7 
+  197  make -f Makefile-7
+  198  ./exercise7 
+  199  make -f Makefile-7
+  200  ./exercise7 
+  201  make -f Makefile-7
+  202  ./exercise7 
+  203  make -f Makefile-7
+  204  ./exercise7 
+  205  cp Exercise7.c Exercise6.c
+  206  cp Makefile-7 Makefile-6
+  207  ls
+  208  make -f Makefile-6
+  209  ./exercise6 
+  210  make -f Makefile-6
+  211  ./exercise6 
+  212  make -f Makefile-6
+  213  ./exercise6 
+  214  make -f Makefile-6
+  215  ./exercise6 
+  216  make -f Makefile-6
+  217  ./exercise6 
+  218  make -f Makefile-6
+  219  ./exercise6 
+  220  make -f Makefile-6
+  221  ./exercise6 
+  222  make -f Makefile-6
+  223  ./exercise6 
+  224  make -f Makefile-6
+  225  ./exercise6 
+  226  make -f Makefile-6
+  227  ./exercise6 
+  228  make -f Makefile-6
+  229  ./exercise6 
+  230  make -f Makefile-6
+  231  ./exercise6 
+  232  make -f Makefile-6
+  233  ./exercise6 
+  234  make -f Makefile-6
+  235  ./exercise6 
+  236  make -f Makefile-6
+  237  ./exercise6 
+  238  make -f Makefile-6
+  239  ./exercise6 
+  240  make -f Makefile-6
+  241  ./exercise6 
+  242  make -f Makefile-6
+  243  ./exercise6 
+  244  make -f Makefile-6
+  245  ./exercise6 
+  246  make -f Makefile-6
+  247  ./exercise6 
+  248  make -f Makefile-6
+  249  ./exercise6 
+  250  make -f Makefile-6
+  251  ./exercise6 
+  252  make -f Makefile-6
+  253  ./exercise6 
+  254  make -f Makefile-6
+  255  ./exercise6 
+  256  make -f Makefile-6
+  257  ./exercise6 
+  258  cp Makefile-7 Makefile-8
+  259  emacs Makefile-8&
+  260  cp Exercise7.c Exercise8.c
+  261  emacs Exercise8.c &
+  262  emacs Exercise6.c &
+  263  make -f Makefile-8
+  264  ./exercise8 
+  265  make -f Makefile-8
+  266  ./exercise8 
+  267  make -f Makefile-8
+  268  ./exercise8 
+  269  make -f Makefile-8
+  270  ./exercise8 
+  271  make -f Makefile-8
+  272  ./exercise8 
+  273  make -f Makefile-8
+  274  ./exercise8 
+  275  make -f Makefile-8
+  276  ./exercise8 
+  277  make -f Makefile-8
+  278  ./exercise8 
+  279  make -f Makefile-8
+  280  ./exercise8 
+  281  make -f Makefile-8
+  282  ./exercise8 
+  283  make -f Makefile-8
+  284  ./exercise8 
+  285  make -f Makefile-8
+  286  ./exercise8 
+  287  make -f Makefile-8
+  288  ./exercise8 
+  289  make -f Makefile-8
+  290  ./exercise8 
+  291  make -f Makefile-8
+  292  ./exercise8 
+  293  make -f Makefile-8
+  294  ./exercise8 
+  295  make -f Makefile-8
+  296  ./exercise8 
+  297  make -f Makefile-8
+  298  ./exercise8 
+  299  make -f Makefile-8
+  300  ./exercise8 
+  301  make -f Makefile-8
+  302  ./exercise8 
+  303  make -f Makefile-8
+  304  ./exercise8 
+  305  make -f Makefile-8
+  306  ./exercise8 
+  307  make -f Makefile-8
+  308  ./exercise8 
+  309  make -f Makefile-8
+  310  ./exercise8 
+  311  make -f Makefile-8
+  312  ./exercise8 
+  313  make -f Makefile-8
+  314  ./exercise8 
+  315  make -f Makefile-8
+  316  ./exercise8 
+  317  scp Makefile-8 Makefile-9
+  318  emacs Makefile-9&
+  319  scp Exercise7.c Exercise9.c
+  320  emacs Exercise9.c &
+  321  make -f Makefile-9
+  322  ./exercise9 
+  323  make -f Makefile-9
+  324  ./exercise9 
+  325  make -f Makefile-9
+  326  ./exercise9 
+  327  make -f Makefile-9
+  328  ./exercise9 
+  329  make -f Makefile-9
+  330  ./exercise9 
+  331  make -f Makefile-9
+  332  ./exercise9 
+  333  make -f Makefile-9
+  334  ./exercise9 
+  335  make -f Makefile-9
+  336  ./exercise9 
+  337  make -f Makefile-9
+  338  ./exercise9 
+  339  make -f Makefile-9
+  340  ./exercise9 
+  341  make -f Makefile-9
+  342  ./exercise9 
+  343  make -f Makefile-9
+  344  ./exercise9 
+  345  make -f Makefile-9
+  346  ./exercise9 
+  347  make -f Makefile-9
+  348  ./exercise9 
+  349  make -f Makefile-9
+  350  ./exercise9 
+  351  make -f Makefile-9
+  352  ./exercise9 
+  353  make -f Makefile-9
+  354  ./exercise9 
+  355  make -f Makefile-9
+  356  ./exercise9 
+  357  make -f Makefile-9
+  358  ./exercise9 
+  359  make -f Makefile-9
+  360  ./exercise9 
+  361  make -f Makefile-9
+  362  ./exercise9 
+  363  make -f Makefile-9
+  364  ./exercise9 
+  365  make -f Makefile-9
+  366  ./exercise9 
+  367  make -f Makefile-9
+  368  ./exercise9 
+  369  make -f Makefile-9
+  370  ./exercise9 
+  371  make -f Makefile-9
+  372  ./exercise9 
+  373  make -f Makefile-9
+  374  ./exercise9 
+  375  make -f Makefile-9
+  376  ./exercise9 
+  377  make -f Makefile-9
+  378  ./exercise9 
+  379  make -f Makefile-9
+  380  ./exercise9 
+  381  make -f Makefile-9
+  382  ./exercise9 
+  383  make -f Makefile-9
+  384  ./exercise9 
+  385  make -f Makefile-9
+  386  ./exercise9 
+  387  make -f Makefile-9
+  388  ./exercise9 
+  389  make -f Makefile-9
+  390  ./exercise9 
+  391  make -f Makefile-9
+  392  ./exercise9 
+  393  make -f Makefile-9
+  394  ./exercise9 
+  395  make -f Makefile-9
+  396  ./exercise9 
+  397  make -f Makefile-9
+  398  ./exercise9 
+  399  scp Exercise8.c Exercise10.c
+  400  scp Makefile-8 Makefile-10
+  401  emacs Makefile-10&
+  402  emacs Exercise10.c &
+  403  make -f Makefile-10
+  404  ./exercise10 
+  405  make -f Makefile-10
+  406  ./exercise10 
+  407  make -f Makefile-10
+  408  ./exercise10 
+  409  make -f Makefile-10
+  410  ./exercise10 
+  411  make -f Makefile-10
+  412  ./exercise10 
+  413  make -f Makefile-10
+  414  ./exercise10 
+  415  make -f Makefile-10
+  416  ./exercise10 
+  417  make -f Makefile-10
+  418  ./exercise10 
+  419  make -f Makefile-10
+  420  ./exercise10 
+  421  make -f Makefile-10
+  422  ./exercise10 
+  423  make -f Makefile-10
+  424  ./exercise10 
+  425  make -f Makefile-10
+  426  ./exercise10 
+  427  make -f Makefile-10
+  428  ./exercise10 
+  429  make -f Makefile-10
+  430  ./exercise10 
+  431  make -f Makefile-10
+  432  ./exercise10 
+  433  make -f Makefile-10
+  434  ./exercise10 
+  435  make -f Makefile-10
+  436  ./exercise10 
+  437  make -f Makefile-10
+  438  ./exercise10 
+  439  man ps
+  440  ls
+  441  cd ..
+  442  tar -zcvf ISOTDAQ_Homeworks.tar.gz ISOTDAQ_Homeworks
+  443  ls
+  444  ls -l
+  445  cd ISOTDAQ_Homeworks/
+  446  gedit README
+  447  ls
+  448  cd ..
+  449  tar -zcvf ISOTDAQ_Homeworks.tar.gz ISOTDAQ_Homeworks
+  450  ls -lt
+  451  tar -ztvf ISOTDAQ_Homeworks.tar.gz 
+  452  sudo apt-get install a2ps
+  453  a2ps -o Ex1 Exercise1.c -L 80
+  454  a2ps
+  455  cd ISOTDAQ_Homeworks/
+  456  a2ps -o Ex1 Exercise1.c -L 80
+  457  evince Ex1
+  458  a2ps -o Ex10 Exercise10.c -L 80 --columns 2
+  459  evince Ex10
+  460  a2ps -o Ex10 Exercise10.c -L 80 
+  461  less Exercise10.c
+  462  a2ps -o Ex9 Exercise9.c -L 80 
+  463  a2ps -o Ex8 Exercise8.c -L 80 
+  464  evince Ex10
+  465  a2ps -o Ex7 Exercise7.c -L 80 
+  466  a2ps -o Ex6 Exercise6.c -L 80 
+  467  a2ps -o Ex5 Exercise5.c -L 80 
+  468  a2ps -o Ex4 Exercise4.c -L 80 
+  469  a2ps -o Ex3 Exercise3.c -L 80 
+  470  a2ps -o Ex2 Exercise2.c -L 80 
+  471  evince Ex9
+  472  evince Ex8
+  473  evince Ex7
+  474  evince Ex6
+  475  evince Ex5
+  476  evince Ex4
+  477  evince Ex3
+  478  evince Ex2
+  479  evince Ex1
+  480  tunnels 
+  481  kill 10738
+  482  tunnels 
+  483  ssh cdaql6
+  484  ls ~/Qweak_Analysis/data_set_large_Aq 
+  485  cd scratch/scripts/
+  486  emacs PlotTools.C&
+  487  root -l
+  488  ssh ou-qweak5 
+  489  ls
+  490  less firewallrules_setup
+  491  cat sudo ufw allow out 53,137,138/udp
+  492  sudo ufw allow out 20,21,22,25,80,139,443,5900,8001/tcp
+  493  cat firewallrules_setup
+  494  sudo ufw allow out 53,137,138/udp
+  495  exit
+  496  tunnels 
+  497  kill 21946
+  498  tunnels 
+  499  kill 26701
+  500  exit
+  501  cd mycodes/ISOTDAQ_Homeworks/
+  502  git push origin master
+  503  cd ..
+  504  ln -s  ISOTDAQ_Homeworks ISOTDAQ
+  505  cd ISOTDAQ
+  506  git init
+  507  touch README 
+  508  git add README 
+  509  git commit 'My first commit to git'
+  510  git commit -m 'My first commit to git'
+  511  git remote add origin git@github.com:rakithab/ISOTDAQ.git
+  512  rm -r .git
+  513  rm -rf .git
+  514  git init
+  515  touch README 
+  516  git commit -m 'My first commit to git'
+  517  git remote add origin git@github.com:rakithab/ISOTDAQ.git
+  518  git push origin master
+  519  git add
+  520  git remote add origin git@github.com:rakithab/ISOTDAQ.git
+  521  git push origin master
+  522  cd ..
+  523  rm ISOTDAQ
+  524  ls
+  525  mkdir ISOTDAQ
+  526  cd ISOTDAQ
+  527  git init
+  528  touch README
+  529  git add README 
+  530  git commit -m 'first commit'
+  531  git remote add origin git@github.com:rakithab/ISOTDAQ.git
+  532  git push origin master
+  533  git status
+  534  git update
+  535  git -h
+  536  git up
+  537  git pull
+  538  git pull ISOTDAQ
+  539  ls
+  540  git ls-files
+  541  history > README 
